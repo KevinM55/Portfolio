@@ -73,7 +73,8 @@ textarea {
 .skills-column ul li {
   padding: 5px 0;           
   font-size: 16px;
-  color: #555;
+   font-weight: 500;
+  color: #0f0f0f;
 }
 :root {
   --color-primary: #191d2b;
