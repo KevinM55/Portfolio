@@ -20,6 +20,10 @@ FormSubmit - Backend service for handling contact form submission
 # Installations
 Live server -
 Prettier - Consistent code style
+# Extra resources
+Youtube - Coder Coder
+ChatGpt
+W3Schools
 
 # Usage
 Navigation: Use the controls at the bottom/right side of the page to navigate between sections: Home, About, Portfolio, and Contact.
