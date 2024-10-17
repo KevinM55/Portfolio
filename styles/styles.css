@@ -4,14 +4,52 @@
   box-sizing: border-box;
   list-style: none;}
 
-  .form-message.success {
-    color: green;
-    margin-top: 10px;
+  .contact-form {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Round corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-.form-message.error {
-    color: red;
-    margin-top: 10px;
+.form-group {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make the label bold */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Add padding inside inputs */
+    border: 1px solid #ccc; /* Add border to inputs */
+    border-radius: 4px; /* Round corners for inputs */
+    font-size: 16px; /* Increase font size */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.btn-submit {
+    padding: 10px 15px; /* Add padding for the button */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round button corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Increase button font size */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Darken button on hover */
 }
 
 .skills-container {
@@ -39,12 +77,12 @@
 }
 
 .skills-column ul {
-  list-style-type: none;      /* Remove bullet points */
+  list-style-type: none;     
   padding: 0;
 }
 
 .skills-column ul li {
-  padding: 5px 0;             /* Add spacing between items */
+  padding: 5px 0;            
   font-size: 16px;
   color: #555;
 }
