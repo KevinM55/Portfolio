@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;}
-<<<<<<< HEAD
   /* Chatbot Container */
 .chat-container {
   position: fixed;
@@ -77,8 +76,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-=======
->>>>>>> eb391b2c8427f8fedc2d44413bbc6cda02052fe2
 
   .contact-form {
     max-width: 600px; /* Set a max width for the form */
