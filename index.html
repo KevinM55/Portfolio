@@ -39,13 +39,18 @@
             </div>
         </div>
     </header>
-    <div class="chat-container" >
-        <div class="chat-box" id ="chat-box"><div class="bot-message">Hi Hi</div></div></div>
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
+     <!-- Button to invoke chatbot -->
+     <button class="chat-toggle-button" onclick="toggleChatbot()">Chat with us</button>
+
+     <!-- Chatbot Container (Initially Hidden) -->
+     <div class="chat-container" id="chat-container" style="display: none;">
+         <div class="chat-box" id="chat-box">
+             <div class="chat-message bot-message">Hi! How can I assist you today?</div>
+         </div>
+         <div class="chat-input">
+          
+         </div>
+     </div>
     <main>
         <section class="container about" id="about">
             <div class="main-title">
@@ -55,7 +60,7 @@
                 <div class="left-about">
                     <h4>Information About me</h4>
                     <p style><div style="text-align: center;">
-                        <!--INFORMATION ABOUT YOURSELF-->
+                        
                         I graduated from Tshwane University of Technology with a solid background in information technology (Intelligent Industrial Systems), where I also gained expertise in software development, programming, and IT automation. I took an active part in a number of projects during my education, such as hackathons, where I refined my teamwork and problem-solving skills.
 
 As a Junior Software Developer, I am thrilled to begin my professional career where I can put my acquired talents to use and work on creative projects. I'm excited to pick up new skills and expand my knowledge in the field of software development.
@@ -69,11 +74,11 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
                 </div>
             </div>
 
-            <!-- SKILLS -->
+            
             <div class="about-stats">
                 <h4 class="stat-title"> Skills</h4>
 <div class="skills-container">
-        <!-- Technical Skills -->
+      
         <div class="skills-column">
             <h2>Technical Skills</h2>
             <ul>
@@ -85,8 +90,6 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
                 <li>Frameworks and Libraries - PyTorch, OpenCV</li>
             </ul>
         </div>
-
-        <!-- Soft Skills -->
         <div class="skills-column">
             <h2>Soft Skills</h2>
             <ul>
@@ -102,7 +105,6 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
               </div>
             </div>
             </div>
-            <!-- EXPERIENCE  -->
             <h4 class="stat-title">My Timeline</h4>
             
             <div class="timeline">
@@ -162,8 +164,6 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
                 </div>
             </div>
         </section>
-
-        <!-- PORTFOLIO PAge  -->
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Projects</span><span class="bg-text">My Work</span></h2>
@@ -224,8 +224,6 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
                 </div>
             </div>
         </section>
-
-        <!-- CONTACT ME  -->
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -266,7 +264,7 @@ As a Junior Software Developer, I am thrilled to begin my professional career wh
                                 <div class="icon">
                                     <i class="fas fa-globe-africa"></i>
                                     <span>Languages:  English and IsiNdebele </span> <br>
-                                </div>
+                               </div>
                             </div>
                         </div>
                         <div class="contact-icons">
