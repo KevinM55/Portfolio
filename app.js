@@ -13,7 +13,7 @@
 })();
 function toggleChatbot() {
     const chatbot = document.getElementById("chat-container");
-    if (chatbot.style.display === "none" || chatbot.style.display === "") {
+    if (chatbot.style.display === "none" || chatbot.style.display ==="") {
         chatbot.style.display = "flex";
     } else {
         chatbot.style.display = "none";
@@ -27,7 +27,14 @@ function addMessage(message, className) {
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight; 
 }
-
+function sendMessage() {
+    const userInput = document.getElementById("user-input").value.trim().toLowerCase();   
+    if (userInput === "") return; 
+    addMessage(`You: ${userInput}`, "user-message"); 
+    let response = ""; 
+    addMessage(`Chatbot: ${response}`, "bot-message");
+    document.getElementById("user-input").value = "";
+}
 function handleKeyPress(event) {
     if (event.key === "Enter") {
         sendMessage();
