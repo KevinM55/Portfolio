@@ -39,15 +39,14 @@
             </div>
         </div>
     </header>
-     <!-- Button to invoke chatbot -->
-     <button class="chat-toggle-button" onclick="toggleChatbot()">Chat with us</button>
-
-     <!-- Chatbot Container (Initially Hidden) -->
+     <button class="chat-toggle-button" onclick="toggleChatbot()">Chat with me</button>
      <div class="chat-container" id="chat-container" style="display: none;">
          <div class="chat-box" id="chat-box">
-             <div class="chat-message bot-message">Hi! How can I assist you today?</div>
+             <div class="chat-message bot-message">Hi! How may I assist you today?</div>
          </div>
          <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
           
          </div>
      </div>
