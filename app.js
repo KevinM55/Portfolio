@@ -22,7 +22,7 @@ function toggleChatbot() {
  const keywords = ["name","hello","hi","greetings","hey", "education", "project", "skills", "soft","summary",
     "technical", "about","github","linkedin","yes","contacts","collision","detection","vehicle","shape","iot ",
     "socials","social","location", "contact","collision", "timeline", "programming", "ar", "language",
-"restaurant","menu","plc", "water", "level", "control","iot","certificate","certification","shape","recognition"]
+"restaurant","menu","plc", "water", "level", "control","iot","certificates","achievements","achievement","certificate","certification","shape","recognition"]
     let sentence = " ";
 function findKeyword(userInput, keywords){
     for (let keyword of keywords){if(userInput.includes(keyword)) return keyword;}
@@ -38,20 +38,16 @@ function addMessage(message, className) {
 function sendMessage() {
     const userInput = document.getElementById("user-input").value.trim();
     if (userInput === "") return; 
-    addMessage(`You: ${userInput}`, "user-message");
+    addMessage(` ${userInput}`, "user-message");
     let response = findKeyword(userInput, keywords); 
     if (!response) {
         response = "I'm sorry, I didn't understand that. Can you ask something else?";
     } else {
         switch(response) {
-          case "hi":
-          case "hello":
-          case "greetings": 
-          case "hey":
+          case "hi":case "hello": case "greetings":  case "hey":
                 response = "Hey there, how may I help you?"; 
                 break;
-            case "contact":
-            case "contacts": 
+            case "contact": case "contacts": 
             response = "You can reach me via the following" +  
             "Email: mduduzikevin93gmail.com" 
             + "LinkedIn: " 
@@ -59,11 +55,10 @@ function sendMessage() {
                 break;
             case "project":  case "projects":
                 response = "I’ve worked on various projects that showcase my technical expertise"
-                + "and problem-solving abilities. Here are a few examples:" + 
-                "Project list: "
-                 +" 1. Collision Detection Vehicle"
-                 +"2. AR Restaurant Menu"
-                 +"3. PLC Water Level Control"
+                + " and problem-solving abilities. Here are a few examples:" + 
+                "Project list: \t "
+                 +" 1. Collision Detection Vehicle\n "
+                 +"2. AR Restaurant Menu\n 3. PLC Water Level Control\n "
                  +"4. Shape Recognition" + "Let me know if you would like to more...";
                 break;
                 case "collision": case "detection": case "vehicle":
@@ -98,13 +93,19 @@ function sendMessage() {
             + "Relevant courses: "
             + "Industrial Control Systems\t Robotics & Automation\t Embedded systems\t" 
             + "Machine Learning\t IoT Applications ";
+            "Additionaly I have completed a few certificates from international vendors"
+            case "certificates": case "certificate" : case "achievement" : case "achievements":
+                response = "Here's list of my achievements:\n "
+                + "CCNA CyberOps associate\t\n"
+                + "Microsoft AZ-900\t\n"
+                + "CXIA XR Development";
             break;  
             default:
          response = "I'm here to assist you!";
                 break; }
              
     }
-    addMessage(`Chatbot: ${response}`, "bot-message");
+    addMessage(`${response}`, "bot-message");
     document.getElementById("user-input").value = "";
 }
 function findKeyword(userInput, keywords) {
