@@ -57,8 +57,9 @@ function sendMessage() {
                 response = "I’ve worked on various projects that showcase my technical expertise"
                 + " and problem-solving abilities. Here are a few examples:" + 
                 "Project list: \t "
-                 +" 1. Collision Detection Vehicle\n "
-                 +"2. AR Restaurant Menu\n 3. PLC Water Level Control\n "
+                 +"<p> 1. Collision Detection Vehicle\n </p>"
+                 +"2. AR Restaurant Menu\n "
+                 +" 3. PLC Water Level Control\n "
                  +"4. Shape Recognition" + "Let me know if you would like to more...";
                 break;
                 case "collision": case "detection": case "vehicle":
