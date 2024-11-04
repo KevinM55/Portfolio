@@ -95,6 +95,7 @@ function sendMessage() {
             + "Industrial Control Systems\t Robotics & Automation\t Embedded systems\t" 
             + "Machine Learning\t IoT Applications ";
             "Additionaly I have completed a few certificates from international vendors"
+            break;
             case "certificates": case "certificate" : case "achievement" : case "achievements":
                 response = "Here's list of my achievements:\n "
                 + "CCNA CyberOps associate\t\n"
